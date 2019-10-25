@@ -11,9 +11,7 @@ module.exports = {
   mode: isProduction ? 'production' : 'development',
   entry: PATHS.ENTRY_FILE,
   output: {
-    path: PATHS.BUILD_DIR,
-    publicPath: '/',
-    filename: '[name].[hash:6].js'
+    path: PATHS.BUILD_DIR,  
   },
   module: {
     rules: [
